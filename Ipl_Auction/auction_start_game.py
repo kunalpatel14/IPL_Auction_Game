@@ -456,6 +456,7 @@ def start_game_loop(myteam, my_price):
         economy = player[15]
         base_price = player[18]
         teams_containder = main_algo.get_other_teams_for_players(player, team_detail)
+        background_page_1 = pygame.image.load('photo/1_auction_hall_with_temp1.jpg')
         game_display.blit(background_page_1, (0, 0))
         update_values(name.capitalize(), spec, ipl_matches, other_matches, runs, batting_avg, strike_rate, wickets,
                       bowling_avg, economy, base_price, team_detail, country)
